@@ -23,7 +23,7 @@ public class HelloWorldSparkFreemarkerStyle {
 				try {
 					Template aTemplate = aConfiguration.getTemplate("hello.ftl");
 					Map<String, Object> aHelloMap = new HashMap<String, Object>();
-					aHelloMap.put("name","FreeMarker");
+					aHelloMap.put("name","FreeMarker ");
 					aTemplate.process(aHelloMap,aWriter);
 					System.out.println(aWriter);
 				} catch (Exception e) {
